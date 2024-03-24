@@ -1,7 +1,7 @@
 
 import {Injectable} from "@angular/core";
-import {Meeting, Client} from "./meeting.model";
-import {DataSource} from "./static.datasource";
+import {Meeting, Client} from "../meeting.model";
+import {DataSource} from "../static.datasource";
 
 
 @Injectable()

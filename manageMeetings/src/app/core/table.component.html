@@ -1,0 +1,27 @@
+<table class="table table-sm table-bordered table-striped">
+  <thead>
+  <tr>
+    <th>Client Name</th><th>Meeting Topic</th><th>People Count</th><th>Meeting Time</th><th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of getMeetings()">
+    <td>{{item.client}}</td>
+    <td>{{item.meetingTopic}}</td>
+    <td>{{item.peopleCount}}</td>
+    <td>{{item.meetingStartTime}}</td>
+    <td class="text-center">
+      <button class="btn btn-danger btn-sm m-1"
+              (click)="deleteMeeting(item.id)">
+        Delete
+      </button>
+      <button class="btn btn-warning btn-sm" (click)="editMeeting(item.id)">
+        Edit
+      </button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<button class="btn btn-primary mt-1" (click)="createMeeting()">
+  Create New Meeting
+</button>
