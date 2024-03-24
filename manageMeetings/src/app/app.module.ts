@@ -7,6 +7,7 @@ import { ModelModule } from "./model/model.module";
 import { CoreModule } from "./core/core.module";
 import { TableComponent } from "./core/table.component";
 import { FormComponent } from "./core/form.component";
+import {ClientFormComponent} from "./core/clientForm.component";
 import { MessageModule } from "./messages/message.module";
 import { MessageComponent } from "./messages/message.component";
 
@@ -14,6 +15,6 @@ import { MessageComponent } from "./messages/message.component";
   declarations: [],
   imports: [BrowserModule, ModelModule, CoreModule, MessageModule],
   providers: [],
-  bootstrap: [TableComponent, FormComponent, MessageComponent]
+  bootstrap: [TableComponent, FormComponent, MessageComponent, ClientFormComponent]
 })
 export class AppModule { }
