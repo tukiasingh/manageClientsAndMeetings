@@ -18,7 +18,7 @@ export class FormComponent {
   constructor(private model: Model, private state: SharedState,
               private messageService: MessageService) {
     this.state.changes.subscribe((upd) => this.handleStateChange(upd))
-    this.messageService.reportMessage(new Message("Creating New Meeting"));
+    this.messageService.reportMessage(new Message("Create a New Meeting"));
   }
 
   handleStateChange(newState: StateUpdate) {
