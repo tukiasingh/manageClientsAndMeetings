@@ -1,6 +1,6 @@
 export class Meeting {
   constructor(public meetingTopic?:string, public peopleCount?:number,
-              public meetingStartTime?:String, public client?:string,
+              public client?:string, public meetingStartTime?:String,
               public clientId?:number|any, public id?:number|any) {}
 }
 
